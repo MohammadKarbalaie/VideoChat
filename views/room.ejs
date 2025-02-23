@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      const Room_ID = `<%= roomId %>`;
+    </script>
+    <script src="peerjs.min.js"></script>
+    <title>چت ویدیویی</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3>چت ویدیویی</h3>
+    </div>
+
+    <div class="main">
+      <div class="main-left">
+        <div class="video-group">
+          <div id="video-grid"></div>
+
+          <div class="option">
+            <div id="stopVideo" class="option__button">
+              <i class="fas fa-video"></i>
+            </div>
+
+            <div id="muteButton" class="option__button">
+              <i class="fas fa-microphone"></i>
+            </div>
+
+            <div id="inviteButton" class="option__button">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-right">
+          <div class="chat-view">
+
+          </div>
+          <div class="option-chat-view">
+            <input type="text">
+            <button><i class="fas fa-plus"></i></button>
+          </div>
+      </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

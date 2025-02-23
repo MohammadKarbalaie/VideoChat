@@ -1,0 +1,130 @@
+:root{
+    font-family: 'BYeK';
+    --main-dark:#161d29;
+    --main-light:#eeeeee;
+    --main-darklg:#1d2536;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.header{
+    height: 7.5vh;
+    background-color: var(--main-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    color:var(--main-light) ;
+}
+
+.main{
+    height: 92.5vh;
+    background-color: var(--main-darklg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-left{
+    height: 92.5vh;
+    background-color: var(--main-darklg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.main-right{
+    width: 20%;
+    height: 92.5vh;
+    background-color: #545454;
+
+}
+
+#video-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+video{
+    width: 400px;
+    height: 300px;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    transform: rotateY(180deg);
+}
+
+.video-group{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.option{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--main-darklg);
+}
+
+.option__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    font-size: 1.2rem;
+    margin: 0, 0.5rem;
+}
+
+.back-red{
+    background-color: red;
+}
+
+.chat-view{
+    height: 83vh;
+    background-color: #eeeeee;
+    margin: 6px;
+    
+}
+
+.option-chat-view{
+    border-top: 4px solid black;
+    padding: 10px 15px;
+}
+
+.option-chat-view input{
+    padding:7px 10px 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+}
+
+.option-chat-view button{
+    padding:13px;
+    border: none;
+    outline: none;
+}
+
+.option-chat-view button:hover{
+    background-color: #948f8f;
+    color: #fff;
+    cursor: pointer;
+}
+
